@@ -50,7 +50,7 @@
 - name: install repo for php7.3 Ubuntu 16
   apt_repository:
     repo: 'ppa:ondrej/php'
-  when: (ansible_distribution == "Ubuntu" and ansible_distribution_major_version|int > 15 and ansible_distribution_major_version|int < 18)
+  when: (ansible_distribution == "Ubuntu" and ansible_distribution_major_version|int > 15)
 
 - name: Add an Apt signing key, uses whichever key is at the URL
   apt_key:
