@@ -37,3 +37,5 @@ default_phabricator_packages_local:
   - mysql-server-8.0
   - python-dev
   - libmysqlclient-dev
+
+ubuntu_name: focal

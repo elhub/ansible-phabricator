@@ -34,3 +34,5 @@ default_phab_python_packages:
   - python3-setuptools
 
 phabricator_pip: "pip==20.3.4"
+
+ubuntu_name: xenial

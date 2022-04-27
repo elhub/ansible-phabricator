@@ -39,3 +39,5 @@ default_phab_python_packages:
   - python-setuptools
   - python3-pip
   - python3-setuptools
+
+ubuntu_name: bionic
