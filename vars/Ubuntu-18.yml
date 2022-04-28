@@ -16,6 +16,7 @@ default_phabricator_packages:
   - php7.4-cli
   - php7.4-mbstring
   - php7.4-apcu
+  - php7.4-xml
   - php7.4-zip
   - exim4
   - subversion
