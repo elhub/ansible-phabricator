@@ -48,18 +48,18 @@
     mode: 0775
 
 - name: add signing key for ubunut
-    apt_key:
-      keyserver: keyserver.ubuntu.com
-      id: "0x14AA40EC0831756756D7F66C4F4EA0AAE5267A6C"
-      state: present
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: "0x14AA40EC0831756756D7F66C4F4EA0AAE5267A6C"
+    state: present
   when: (ansible_distribution == "Ubuntu" and ansible_distribution_major_version|int > 15)
 
 - name: add repo for ubuntu
-    apt_repository:
-      repo: "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu {{ ubuntu_name }} main "
-      state: present
-      filename: ondrej
-      update_cache: true
+  apt_repository:
+    repo: "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu {{ ubuntu_name }} main "
+    state: present
+    filename: ondrej
+    update_cache: true
   when: (ansible_distribution == "Ubuntu" and ansible_distribution_major_version|int > 15)
 
 - name: Add an Apt signing key, uses whichever key is at the URL
