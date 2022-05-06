@@ -56,7 +56,7 @@
 
 - name: add repo for ubuntu
   apt_repository:
-    repo: "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu {{ ubuntu_name }} main "
+    repo: "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu {{ ubuntu_name }} main"
     state: present
     filename: ondrej
     update_cache: true
