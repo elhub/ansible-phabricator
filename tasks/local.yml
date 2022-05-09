@@ -30,10 +30,11 @@
 #   pip:
 #     name: MySQL-python
 
+# Needs to be installed on the root user, as otherwise the create call that follows might not have access to it
 - name: install required python module
   pip:
     name: PyMySQL
-  become: false
+  become: true
   changed_when: false
 
 - name: create mysql user
